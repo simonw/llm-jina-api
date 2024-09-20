@@ -1,0 +1,26 @@
+[project]
+name = "llm-jina-api"
+version = "0.1a0"
+description = "Access Jina AI embeddings via their API"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "llm",
+    "pillow"
+]
+
+[project.urls]
+Homepage = "https://github.com/simonw/llm-jina-api"
+Changelog = "https://github.com/simonw/llm-jina-api/releases"
+Issues = "https://github.com/simonw/llm-jina-api/issues"
+CI = "https://github.com/simonw/llm-jina-api/actions"
+
+[project.entry-points.llm]
+jina_api = "llm_jina_api"
+
+[project.optional-dependencies]
+test = ["pytest"]
